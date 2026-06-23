@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Irish Muslim Circle (IMC) - Unity, Faith, Discipline</title>
+    <meta name="description" content="Irish Muslim Circle (IMC) - A community-driven organisation dedicated to serving the Irish Muslim community. Strengthening faith and contributing to Irish society. Unity, Faith, Discipline.">
+    <meta name="keywords" content="Irish Muslim Circle, IMC, Muslim Ireland, Islamic community Dublin, Muslim community Ireland">
+    <meta name="author" content="Irish Muslim Circle">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Irish Muslim Circle (IMC) - Unity, Faith, Discipline">
+    <meta property="og:description" content="Working for the betterment of the Irish Muslim community — strengthening faith and contributing to Irish society.">
+    <meta property="og:image" content="logo.png">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_IE">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="apple-touch-icon" href="logo.png">
+
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Skip to Content (Accessibility) -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar" aria-label="Main navigation">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <img src="logo.png" alt="IMC Logo" class="logo-img">
+                <span class="logo-text">Irish Muslim Circle</span>
+            </a>
+            <div class="nav-right">
+                <button class="dark-mode-toggle" id="darkModeToggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About Us</a></li>
+                <li><a href="#announcements" class="nav-link">Announcements</a></li>
+                <li><a href="#salah" class="nav-link">Salah Timings</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#media" class="nav-link">Media</a></li>
+                <li><a href="#books" class="nav-link">Books</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+                <img src="logo.png" alt="IMC Logo" class="hero-logo">
+                <h1>Irish Muslim Circle</h1>
+                <p class="motto">Unity &bull; Faith &bull; Discipline</p>
+                <p class="hero-subtitle">Working for the betterment of the Irish Muslim community — strengthening faith and contributing to Irish society.</p>
+                <a href="#about" class="btn btn-primary">Learn More</a>
+            </div>
+        </section>
+
+        <!-- Jumu'ah Countdown -->
+        <section class="jumuah-countdown" id="jumuahCountdown">
+            <div class="container">
+                <div class="countdown-banner">
+                    <i class="fas fa-mosque"></i>
+                    <div class="countdown-content">
+                        <h3>Next Jumu'ah Prayer</h3>
+                        <div class="countdown-timer" id="countdownTimer">
+                            <div class="countdown-unit">
+                                <span class="countdown-number" id="countDays">0</span>
+                                <span class="countdown-label">Days</span>
+                            </div>
+                            <div class="countdown-unit">
+                                <span class="countdown-number" id="countHours">0</span>
+                                <span class="countdown-label">Hours</span>
+                            </div>
+                            <div class="countdown-unit">
+                                <span class="countdown-number" id="countMinutes">0</span>
+                                <span class="countdown-label">Minutes</span>
+                            </div>
+                            <div class="countdown-unit">
+                                <span class="countdown-number" id="countSeconds">0</span>
+                                <span class="countdown-label">Seconds</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Announcements Banner -->
+        <section class="announcements" id="announcements">
+            <div class="container">
+                <div class="announcement-banner" aria-live="polite">
+                    <i class="fas fa-bullhorn"></i>
+                    <div class="announcement-content">
+                        <h3>Latest Announcements</h3>
+                        <div class="announcement-carousel" id="announcementCarousel">
+                            <div class="announcement-slide active">
+                                <p>🕌 Bi-Weekly Halqa in Co. Dublin, Co. Meath and Co. Laois — All welcome!</p>
+                            </div>
+                            <div class="announcement-slide">
+                                <p>📚 New Islamic book collection available — Check our Books section</p>
+                            </div>
+                            <div class="announcement-slide">
+                                <p>🤝 Community volunteer day coming soon — Stay tuned for details</p>
+                            </div>
+                        </div>
+                        <div class="announcement-dots" id="announcementDots">
+                            <button class="dot active" aria-label="Announcement 1"></button>
+                            <button class="dot" aria-label="Announcement 2"></button>
+                            <button class="dot" aria-label="Announcement 3"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us -->
+        <section class="about section" id="about">
+            <div class="container">
+                <h2 class="section-title">About Us</h2>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>The <strong>Irish Muslim Circle (IMC)</strong> is a community-driven organisation dedicated to serving the Irish Muslim community. We strive to strengthen the bonds of faith among Muslims living in Ireland while encouraging active participation in and contribution to Irish society.</p>
+                        <p>Our work is guided by our core values:</p>
+                        <div class="values-grid">
+                            <div class="value-card">
+                                <i class="fas fa-hands-holding-circle"></i>
+                                <h4>Unity</h4>
+                                <p>Bringing the community together regardless of background or ethnicity.</p>
+                            </div>
+                            <div class="value-card">
+                                <i class="fas fa-heart"></i>
+                                <h4>Faith</h4>
+                                <p>Strengthening our connection with Allah and nurturing spiritual growth.</p>
+                            </div>
+                            <div class="value-card">
+                                <i class="fas fa-star"></i>
+                                <h4>Discipline</h4>
+                                <p>Upholding integrity, responsibility, and excellence in all we do.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Salah Timings -->
+        <section class="salah section" id="salah">
+            <div class="container">
+                <h2 class="section-title">Salah Timings</h2>
+                <p class="section-subtitle">Daily prayer times for Dublin, Ireland (updated live)</p>
+                <div class="salah-card">
+                    <div class="salah-date" id="salahDate">
+                        <div class="skeleton skeleton-text"></div>
+                    </div>
+                    <div class="salah-grid" id="salahGrid">
+                        <div class="salah-item skeleton-item"><div class="skeleton skeleton-line"></div></div>
+                        <div class="salah-item skeleton-item"><div class="skeleton skeleton-line"></div></div>
+                        <div class="salah-item skeleton-item"><div class="skeleton skeleton-line"></div></div>
+                        <div class="salah-item skeleton-item"><div class="skeleton skeleton-line"></div></div>
+                        <div class="salah-item skeleton-item"><div class="skeleton skeleton-line"></div></div>
+                        <div class="salah-item skeleton-item"><div class="skeleton skeleton-line"></div></div>
+                    </div>
+                    <p class="salah-source">Data sourced from <a href="https://aladhan.com" target="_blank" rel="noopener">Al Adhan API</a></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery -->
+        <section class="gallery section" id="gallery">
+            <div class="container">
+                <h2 class="section-title">Gallery</h2>
+                <p class="section-subtitle">Moments from our community activities and events</p>
+                <div class="gallery-grid">
+                    <div class="gallery-item" tabindex="0" role="button" aria-label="View Community Gathering photo">
+                        <div class="gallery-placeholder">
+                            <i class="fas fa-image"></i>
+                            <p>Community Gathering</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" tabindex="0" role="button" aria-label="View Educational Workshop photo">
+                        <div class="gallery-placeholder">
+                            <i class="fas fa-image"></i>
+                            <p>Educational Workshop</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" tabindex="0" role="button" aria-label="View Charity Event photo">
+                        <div class="gallery-placeholder">
+                            <i class="fas fa-image"></i>
+                            <p>Charity Event</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" tabindex="0" role="button" aria-label="View Youth Programme photo">
+                        <div class="gallery-placeholder">
+                            <i class="fas fa-image"></i>
+                            <p>Youth Programme</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" tabindex="0" role="button" aria-label="View Interfaith Dialogue photo">
+                        <div class="gallery-placeholder">
+                            <i class="fas fa-image"></i>
+                            <p>Interfaith Dialogue</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" tabindex="0" role="button" aria-label="View Eid Celebration photo">
+                        <div class="gallery-placeholder">
+                            <i class="fas fa-image"></i>
+                            <p>Eid Celebration</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Lightbox -->
+        <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" hidden>
+            <button class="lightbox-close" aria-label="Close lightbox">&times;</button>
+            <button class="lightbox-prev" aria-label="Previous image"><i class="fas fa-chevron-left"></i></button>
+            <button class="lightbox-next" aria-label="Next image"><i class="fas fa-chevron-right"></i></button>
+            <div class="lightbox-content">
+                <img src="" alt="" class="lightbox-img" id="lightboxImg">
+                <p class="lightbox-caption" id="lightboxCaption"></p>
+            </div>
+        </div>
+
+        <!-- Media -->
+        <section class="media section" id="media">
+            <div class="container">
+                <h2 class="section-title">Media</h2>
+                <p class="section-subtitle">Watch our lectures, events, and community content</p>
+                <div class="media-grid">
+                    <a href="https://youtube.com" target="_blank" rel="noopener" class="media-card">
+                        <i class="fab fa-youtube"></i>
+                        <h4>YouTube</h4>
+                        <p>Watch lectures, Friday khutbahs, and event recordings</p>
+                    </a>
+                    <a href="https://facebook.com" target="_blank" rel="noopener" class="media-card">
+                        <i class="fab fa-facebook"></i>
+                        <h4>Facebook</h4>
+                        <p>Follow us for live streams and community updates</p>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener" class="media-card">
+                        <i class="fab fa-instagram"></i>
+                        <h4>Instagram</h4>
+                        <p>See highlights and stories from our activities</p>
+                    </a>
+                    <a href="https://tiktok.com" target="_blank" rel="noopener" class="media-card">
+                        <i class="fab fa-tiktok"></i>
+                        <h4>TikTok</h4>
+                        <p>Short clips and reminders for the community</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Books -->
+        <section class="books section" id="books">
+            <div class="container">
+                <h2 class="section-title">Books &amp; Resources</h2>
+                <p class="section-subtitle">Access our collection of Islamic literature and educational materials</p>
+                <div class="books-grid">
+                    <div class="book-card">
+                        <i class="fas fa-book-quran"></i>
+                        <h4>Quran &amp; Tafseer</h4>
+                        <p>Translations and commentary of the Holy Quran</p>
+                        <a href="#" class="btn btn-outline" target="_blank" rel="noopener">Open in Drive</a>
+                    </div>
+                    <div class="book-card">
+                        <i class="fas fa-book"></i>
+                        <h4>Hadith Collections</h4>
+                        <p>Authentic hadith compilations and references</p>
+                        <a href="#" class="btn btn-outline" target="_blank" rel="noopener">Open in Drive</a>
+                    </div>
+                    <div class="book-card">
+                        <i class="fas fa-book-open"></i>
+                        <h4>Islamic History</h4>
+                        <p>Books on the history of Islam and Muslim civilisation</p>
+                        <a href="#" class="btn btn-outline" target="_blank" rel="noopener">Open in Drive</a>
+                    </div>
+                    <div class="book-card">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h4>General Knowledge</h4>
+                        <p>Educational resources and self-development books</p>
+                        <a href="#" class="btn btn-outline" target="_blank" rel="noopener">Open in Drive</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="contact section" id="contact">
+            <div class="container">
+                <h2 class="section-title">Contact Us</h2>
+                <p class="section-subtitle">Get in touch — we'd love to hear from you</p>
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>info@irishmuslimcircle.ie</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+353 XX XXX XXXX</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-location-dot"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Dublin, Ireland</p>
+                            </div>
+                        </div>
+                        <div class="contact-socials">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                            <a href="https://chat.whatsapp.com/" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                    <form class="contact-form" id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required placeholder="Your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required placeholder="Your email">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Your message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" id="submitBtn">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-loading" hidden><i class="fas fa-spinner fa-spin"></i> Sending...</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="logo.png" alt="IMC Logo" class="footer-logo">
+                    <p>Irish Muslim Circle</p>
+                    <p class="footer-motto">Unity &bull; Faith &bull; Discipline</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#salah">Salah</a>
+                    <a href="#gallery">Gallery</a>
+                    <a href="#media">Media</a>
+                    <a href="#books">Books</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> Irish Muslim Circle. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
