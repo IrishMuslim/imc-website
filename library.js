@@ -1,0 +1,82 @@
+// ===== Islamic Books Library =====
+const booksCatalogue = [
+    { id: "khutbat", title: "Khutbat", description: "Collection of Juma khutbaat on fundamental pillars of Islam in an accessible yet eloquent style.", category: "maududi", language: "urdu", url: "https://www.readmaududi.com/books/1/book-info/Khutbat" },
+    { id: "dawat-e-islami", title: "Dawat-e-Islami Aur Us Ke Mutalibat", description: "What Islam demands from its followers and how to establish its call in society.", category: "maududi", language: "urdu", url: "https://www.readmaududi.com/books/2/book-info/Dawat-e-Islami-Aur-Us-Ke-Mutalibat" },
+    { id: "tanqeehaat", title: "Tanqeehaat", description: "A call to embrace authentic Islamic civilisation over blind imitation of the West.", category: "maududi", language: "urdu", url: "https://www.readmaududi.com/books/3/book-info/Tanqeehaat" },
+    { id: "tehreek-azadi-hind", title: "Tehreek-e-Azadi Hind Aur Muslman", description: "Historical analysis of the Indian freedom movement and the Muslim position.", category: "maududi", language: "urdu", url: "https://www.readmaududi.com/books/4/book-info/Tehreek-e-Azadi-Hind-aur-Muslman" },
+    { id: "tajdeed-o-ihya", title: "Tajdeed-o-Ihya-e-Deen", description: "Renewal and revival of the faith — a study of Islamic reform movements.", category: "maududi", language: "urdu", url: "https://www.readmaududi.com/books/6/book-info/Tajdeed-o-Ihya-e-Deen" },
+    { id: "taleemat", title: "Taleemat", description: "Critique of the modern education system and the need for Islamic character-building.", category: "maududi", language: "urdu", url: "https://www.readmaududi.com/books/7/book-info/Taleemat" },
+    { id: "sood", title: "Sood (Interest/Usury)", description: "Comprehensive arguments against interest from Islamic and economic perspectives.", category: "maududi", language: "urdu", url: "https://www.readmaududi.com/books/8/book-info/Sood" },
+    { id: "deeniyat", title: "Deeniyat", description: "Foundations of Islamic beliefs explained with rational arguments for the modern mind.", category: "maududi", language: "urdu", url: "https://www.readmaududi.com/books/9/book-info/Deeniyat" },
+    { id: "islami-nizam-zindagi", title: "Islami Nizam-e-Zindagi Aur Us Ke Bunyadi Tasawwarat", description: "Islam's philosophy of life, ethics, history and the concept of Jihad.", category: "maududi", language: "urdu", url: "https://www.readmaududi.com/books/10/book-info/Islami-Nizam-e-Zindagi-Aur-Us-Ke-Bunyadi-Tasawwarat" },
+    { id: "islam-zabt-wiladat", title: "Islam Aur Zabt-e-Wiladat", description: "Islamic perspective on birth control and family planning — a civilisational analysis.", category: "maududi", language: "urdu", url: "https://www.readmaududi.com/books/11/book-info/Islam-Aur-Zabt-e-Wiladat" },
+    { id: "islami-riyasat", title: "Islami Riyasat", description: "Concept of Islamic governance and the political system of Islam.", category: "maududi", language: "urdu", url: "https://www.readmaududi.com/books/13/Islami-Riyasat" },
+    { id: "purdah", title: "Purdah", description: "Discussion on modesty, social ethics and the Islamic dress code.", category: "maududi", language: "urdu", url: "https://www.readmaududi.com/books/28/Pardah?read=1" },
+    { id: "shahadat-e-haq", title: "Shahadat-e-Haq", description: "Purpose of Life.", category: "maududi", language: "urdu", url: "https://www.readmaududi.com/books/30/Shahadat-e-haq?read=1" },
+    { id: "tafhim-ul-quran", title: "Tafhim-ul-Quran", description: "Complete Tafhim-ul-Quran — Maulana Maududi's magnum opus of Quranic commentary.", category: "maududi", language: "urdu", url: "https://www.readmaududi.com/quran" },
+    { id: "rasail-o-masail", title: "Rasail-o-Masail", description: "Collection of religious and social questions and answers.", category: "maududi", language: "urdu", url: "https://www.readmaududi.com/books/137/book-info/Rasail-o-Masail" },
+    { id: "khilafat-o-malookiyat", title: "Khilafat o Malookiyat", description: "Historical and political analysis of the transition from Khilafat to monarchy.", category: "maududi", language: "urdu", url: "https://www.readmaududi.com/books/186/Khilafat-o-Mulookiyat" },
+    { id: "riyad-us-saliheen", title: "Riyad-us-Saliheen", description: "Classical hadith collection by Imam Nawawi covering all aspects of daily life.", category: "general", language: "urdu", url: "https://archive.org/details/riyadussaliheenurdu" },
+    { id: "ar-raheeq-al-makhtum", title: "Ar-Raheeq Al-Makhtum (The Sealed Nectar)", description: "Award-winning biography of Prophet Muhammad ﷺ by Safi-ur-Rahman Mubarakpuri.", category: "general", language: "english", url: "https://archive.org/details/ar-raheeq-al-makhtum-by-safi-mubarakpuri/page/n387/mode/2up" },
+    { id: "forty-hadith-nawawi", title: "Forty Hadith Nawawi", description: "Essential collection of 40 foundational hadith every Muslim should know.", category: "general", language: "urdu", url: "https://archive.org/details/AlarbaonAlKilaniyaChalisAhadeesEGhilan/page/n27/mode/2up" },
+    { id: "hisn-ul-muslim", title: "Hisn-ul-Muslim (Fortress of the Muslim)", description: "Daily supplications and adhkar from the Quran and Sunnah.", category: "general", language: "english", url: "https://archive.org/" },
+    { id: "sahih-al-bukhari", title: "Sahih al-Bukhari", description: "The most authentic hadith collection compiled by Imam Bukhari.", category: "general", language: "english", url: "https://archive.org/details/sahih-albukhari/Sahih-Al-Bukhari_Vol-1_0001-0873/page/n143/mode/2up" }
+];
+
+let activeCategory = 'all';
+let activeLanguage = 'all';
+let searchQuery = '';
+
+function getCategoryLabel(cat) { return cat === 'maududi' ? 'Maulana Maududi' : 'General Islamic'; }
+function getLanguageLabel(lang) { return lang === 'urdu' ? 'اردو' : 'English'; }
+
+function renderLibrary() {
+    const grid = document.getElementById('libraryGrid');
+    const noResults = document.getElementById('libraryNoResults');
+
+    const filtered = booksCatalogue.filter(book => {
+        const matchCat = activeCategory === 'all' || book.category === activeCategory;
+        const matchLang = activeLanguage === 'all' || book.language === activeLanguage;
+        const matchSearch = searchQuery === '' || book.title.toLowerCase().includes(searchQuery.toLowerCase());
+        return matchCat && matchLang && matchSearch;
+    });
+
+    if (filtered.length === 0) { grid.innerHTML = ''; noResults.hidden = false; return; }
+    noResults.hidden = true;
+
+    grid.innerHTML = filtered.map(book => `
+        <div class="library-card">
+            <div>
+                <div class="library-card-header">
+                    <span class="library-card-category ${book.category}">${getCategoryLabel(book.category)}</span>
+                    <span class="library-card-lang">${getLanguageLabel(book.language)}</span>
+                </div>
+                <h4>${book.title}</h4>
+                <p>${book.description}</p>
+            </div>
+            <a href="${book.url}" target="_blank" rel="noopener noreferrer" class="btn btn-outline"><i class="fas fa-external-link-alt"></i> Read Online</a>
+        </div>
+    `).join('');
+}
+
+document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        activeCategory = btn.dataset.category;
+        renderLibrary();
+    });
+});
+
+document.querySelectorAll('.lang-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+        document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        activeLanguage = btn.dataset.lang;
+        renderLibrary();
+    });
+});
+
+document.getElementById('librarySearch').addEventListener('input', (e) => { searchQuery = e.target.value; renderLibrary(); });
+
+renderLibrary();

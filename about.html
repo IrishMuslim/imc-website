@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Irish Muslim Circle</title>
+    <meta name="description" content="Learn about the Irish Muslim Circle — our mission, values, and commitment to the Irish Muslim community.">
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <nav class="navbar" id="navbar" aria-label="Main navigation">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="logo.png" alt="IMC Logo" class="logo-img">
+                <span class="logo-text">Irish Muslim Circle</span>
+            </a>
+            <div class="nav-right">
+                <button class="dark-mode-toggle" id="darkModeToggle" aria-label="Toggle dark mode"><i class="fas fa-moon"></i></button>
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation"><i class="fas fa-bars"></i></button>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link active">About</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="media.html" class="nav-link">Media</a></li>
+                <li><a href="library.html" class="nav-link">Books</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main id="main-content">
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title">About Us</h1>
+                <p class="page-subtitle">Who we are and what we stand for</p>
+            </div>
+        </section>
+
+        <section class="about section">
+            <div class="container">
+                <div class="about-text">
+                    <p>The <strong>Irish Muslim Circle (IMC)</strong> is a community-driven organisation dedicated to serving the Irish Muslim community. We strive to strengthen the bonds of faith among Muslims living in Ireland while encouraging active participation in and contribution to Irish society.</p>
+                    <p>Our work is guided by our core values:</p>
+                    <div class="values-grid">
+                        <div class="value-card">
+                            <i class="fas fa-hands-holding-circle"></i>
+                            <h4>Unity</h4>
+                            <p>Bringing the community together regardless of background or ethnicity.</p>
+                        </div>
+                        <div class="value-card">
+                            <i class="fas fa-heart"></i>
+                            <h4>Faith</h4>
+                            <p>Strengthening our connection with Allah and nurturing spiritual growth.</p>
+                        </div>
+                        <div class="value-card">
+                            <i class="fas fa-star"></i>
+                            <h4>Discipline</h4>
+                            <p>Upholding integrity, responsibility, and excellence in all we do.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="logo.png" alt="IMC Logo" class="footer-logo">
+                    <p>Irish Muslim Circle</p>
+                    <p class="footer-motto">Unity &bull; Faith &bull; Discipline</p>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html">Home</a><a href="about.html">About</a><a href="gallery.html">Gallery</a><a href="media.html">Media</a><a href="library.html">Books</a><a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-socials">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="https://chat.whatsapp.com/" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom"><p>&copy; <span id="currentYear"></span> Irish Muslim Circle. All rights reserved.</p></div>
+        </div>
+    </footer>
+    <button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+    <script src="shared.js"></script>
+</body>
+</html>

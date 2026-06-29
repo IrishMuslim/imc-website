@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Irish Muslim Circle</title>
+    <meta name="description" content="Photo gallery of Irish Muslim Circle community events and activities.">
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <nav class="navbar" id="navbar" aria-label="Main navigation">
+        <div class="container nav-container">
+            <a href="index.html" class="logo"><img src="logo.png" alt="IMC Logo" class="logo-img"><span class="logo-text">Irish Muslim Circle</span></a>
+            <div class="nav-right">
+                <button class="dark-mode-toggle" id="darkModeToggle" aria-label="Toggle dark mode"><i class="fas fa-moon"></i></button>
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation"><i class="fas fa-bars"></i></button>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="gallery.html" class="nav-link active">Gallery</a></li>
+                <li><a href="media.html" class="nav-link">Media</a></li>
+                <li><a href="library.html" class="nav-link">Books</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main id="main-content">
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title">Gallery</h1>
+                <p class="page-subtitle">Moments from our community activities and events</p>
+            </div>
+        </section>
+
+        <section class="gallery section">
+            <div class="container">
+                <div class="gallery-grid">
+                    <div class="gallery-item" tabindex="0" role="button" aria-label="View Community Gathering photo"><div class="gallery-placeholder"><i class="fas fa-image"></i><p>Community Gathering</p></div></div>
+                    <div class="gallery-item" tabindex="0" role="button" aria-label="View Educational Workshop photo"><div class="gallery-placeholder"><i class="fas fa-image"></i><p>Educational Workshop</p></div></div>
+                    <div class="gallery-item" tabindex="0" role="button" aria-label="View Charity Event photo"><div class="gallery-placeholder"><i class="fas fa-image"></i><p>Charity Event</p></div></div>
+                    <div class="gallery-item" tabindex="0" role="button" aria-label="View Youth Programme photo"><div class="gallery-placeholder"><i class="fas fa-image"></i><p>Youth Programme</p></div></div>
+                    <div class="gallery-item" tabindex="0" role="button" aria-label="View Interfaith Dialogue photo"><div class="gallery-placeholder"><i class="fas fa-image"></i><p>Interfaith Dialogue</p></div></div>
+                    <div class="gallery-item" tabindex="0" role="button" aria-label="View Eid Celebration photo"><div class="gallery-placeholder"><i class="fas fa-image"></i><p>Eid Celebration</p></div></div>
+                </div>
+            </div>
+        </section>
+
+        <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" hidden>
+            <button class="lightbox-close" aria-label="Close lightbox">&times;</button>
+            <button class="lightbox-prev" aria-label="Previous image"><i class="fas fa-chevron-left"></i></button>
+            <button class="lightbox-next" aria-label="Next image"><i class="fas fa-chevron-right"></i></button>
+            <div class="lightbox-content">
+                <img src="" alt="" class="lightbox-img" id="lightboxImg">
+                <p class="lightbox-caption" id="lightboxCaption"></p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand"><img src="logo.png" alt="IMC Logo" class="footer-logo"><p>Irish Muslim Circle</p><p class="footer-motto">Unity &bull; Faith &bull; Discipline</p></div>
+                <div class="footer-links"><a href="index.html">Home</a><a href="about.html">About</a><a href="gallery.html">Gallery</a><a href="media.html">Media</a><a href="library.html">Books</a><a href="contact.html">Contact</a></div>
+                <div class="footer-socials"><a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a><a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a><a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a><a href="https://chat.whatsapp.com/" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a></div>
+            </div>
+            <div class="footer-bottom"><p>&copy; <span id="currentYear"></span> Irish Muslim Circle. All rights reserved.</p></div>
+        </div>
+    </footer>
+    <button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+    <script src="shared.js"></script>
+    <script src="gallery.js"></script>
+</body>
+</html>
