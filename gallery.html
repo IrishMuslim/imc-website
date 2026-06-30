@@ -41,19 +41,125 @@
             </div>
         </section>
 
+        <!-- Gallery Filters -->
         <section class="gallery section">
             <div class="container">
-                <div class="gallery-grid">
-                    <div class="gallery-item" tabindex="0" role="button" aria-label="View Community Gathering photo"><div class="gallery-placeholder"><i class="fas fa-image"></i><p>Community Gathering</p></div></div>
-                    <div class="gallery-item" tabindex="0" role="button" aria-label="View Educational Workshop photo"><div class="gallery-placeholder"><i class="fas fa-image"></i><p>Educational Workshop</p></div></div>
-                    <div class="gallery-item" tabindex="0" role="button" aria-label="View Charity Event photo"><div class="gallery-placeholder"><i class="fas fa-image"></i><p>Charity Event</p></div></div>
-                    <div class="gallery-item" tabindex="0" role="button" aria-label="View Youth Programme photo"><div class="gallery-placeholder"><i class="fas fa-image"></i><p>Youth Programme</p></div></div>
-                    <div class="gallery-item" tabindex="0" role="button" aria-label="View Interfaith Dialogue photo"><div class="gallery-placeholder"><i class="fas fa-image"></i><p>Interfaith Dialogue</p></div></div>
-                    <div class="gallery-item" tabindex="0" role="button" aria-label="View Eid Celebration photo"><div class="gallery-placeholder"><i class="fas fa-image"></i><p>Eid Celebration</p></div></div>
+                <div class="gallery-filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="halqa">Weekly Halqa</button>
+                    <button class="filter-btn" data-filter="community">Community Gatherings</button>
+                    <button class="filter-btn" data-filter="eid">Eid Celebrations</button>
+                    <button class="filter-btn" data-filter="charity">Charity & Relief</button>
+                    <button class="filter-btn" data-filter="visits">Visits & Outreach</button>
+                </div>
+
+                <div class="gallery-grid" id="galleryGrid">
+                    <!-- Weekly Halqa -->
+                    <div class="gallery-item" data-category="halqa" tabindex="0" role="button">
+                        <img src="images/Weekly_Halqa1.jpg" alt="Weekly Halqa session" loading="lazy">
+                        <div class="gallery-overlay"><p>Weekly Halqa</p></div>
+                    </div>
+                    <div class="gallery-item" data-category="halqa" tabindex="0" role="button">
+                        <img src="images/Weekly_halqa2.jpg" alt="Weekly Halqa gathering" loading="lazy">
+                        <div class="gallery-overlay"><p>Weekly Halqa</p></div>
+                    </div>
+                    <div class="gallery-item" data-category="halqa" tabindex="0" role="button">
+                        <img src="images/Community_halqaquran.jpg" alt="Quran Halqa" loading="lazy">
+                        <div class="gallery-overlay"><p>Quran Halqa</p></div>
+                    </div>
+                    <div class="gallery-item" data-category="halqa" tabindex="0" role="button">
+                        <img src="images/Community_QuranHalqa.jpg" alt="Community Quran Halqa" loading="lazy">
+                        <div class="gallery-overlay"><p>Quran Halqa</p></div>
+                    </div>
+
+                    <!-- Community Gatherings -->
+                    <div class="gallery-item" data-category="community" tabindex="0" role="button">
+                        <img src="images/Community_Gathering1.jpg" alt="Community Gathering" loading="lazy">
+                        <div class="gallery-overlay"><p>Community Gathering</p></div>
+                    </div>
+                    <div class="gallery-item" data-category="community" tabindex="0" role="button">
+                        <img src="images/Community_gathering45.jpg" alt="Community Gathering" loading="lazy">
+                        <div class="gallery-overlay"><p>Community Gathering</p></div>
+                    </div>
+                    <div class="gallery-item" data-category="community" tabindex="0" role="button">
+                        <img src="images/Commnity_event32.jpg" alt="Community Event" loading="lazy">
+                        <div class="gallery-overlay"><p>Community Event</p></div>
+                    </div>
+                    <div class="gallery-item" data-category="community" tabindex="0" role="button">
+                        <img src="images/Community_event32.jpg" alt="Community Event" loading="lazy">
+                        <div class="gallery-overlay"><p>Community Event</p></div>
+                    </div>
+                    <div class="gallery-item" data-category="community" tabindex="0" role="button">
+                        <img src="images/mmunity_gathering65.jpg" alt="Community Gathering" loading="lazy">
+                        <div class="gallery-overlay"><p>Community Gathering</p></div>
+                    </div>
+                    <div class="gallery-item" data-category="community" tabindex="0" role="button">
+                        <img src="images/Community_iftar.jpg" alt="Community Iftar" loading="lazy">
+                        <div class="gallery-overlay"><p>Community Iftar</p></div>
+                    </div>
+                    <div class="gallery-item" data-category="community" tabindex="0" role="button">
+                        <img src="images/Neighbour_week_Activity1.jpg" alt="Neighbour Week Activity" loading="lazy">
+                        <div class="gallery-overlay"><p>Neighbour Week Activity</p></div>
+                    </div>
+
+                    <!-- Eid Celebrations -->
+                    <div class="gallery-item" data-category="eid" tabindex="0" role="button">
+                        <img src="images/Eid_gathering1.jpg" alt="Eid Gathering" loading="lazy">
+                        <div class="gallery-overlay"><p>Eid Gathering</p></div>
+                    </div>
+                    <div class="gallery-item" data-category="eid" tabindex="0" role="button">
+                        <img src="images/Eid_Gathering2.jpg" alt="Eid Gathering" loading="lazy">
+                        <div class="gallery-overlay"><p>Eid Gathering</p></div>
+                    </div>
+                    <div class="gallery-item" data-category="eid" tabindex="0" role="button">
+                        <img src="images/Eid_Gathering25.jpg" alt="Eid Gathering" loading="lazy">
+                        <div class="gallery-overlay"><p>Eid Gathering</p></div>
+                    </div>
+                    <div class="gallery-item" data-category="eid" tabindex="0" role="button">
+                        <img src="images/Eid_Gathering3.jpg" alt="Eid Gathering" loading="lazy">
+                        <div class="gallery-overlay"><p>Eid Gathering</p></div>
+                    </div>
+
+                    <!-- Charity & Relief -->
+                    <div class="gallery-item" data-category="charity" tabindex="0" role="button">
+                        <img src="images/Charity_Dinner1.jpg" alt="Charity Dinner" loading="lazy">
+                        <div class="gallery-overlay"><p>Charity Dinner</p></div>
+                    </div>
+                    <div class="gallery-item" data-category="charity" tabindex="0" role="button">
+                        <img src="images/Charity_Dinner2.jpg" alt="Charity Dinner" loading="lazy">
+                        <div class="gallery-overlay"><p>Charity Dinner</p></div>
+                    </div>
+                    <div class="gallery-item" data-category="charity" tabindex="0" role="button">
+                        <img src="images/Flood-relief_pak.jpg" alt="Pakistan Flood Relief" loading="lazy">
+                        <div class="gallery-overlay"><p>Pakistan Flood Relief</p></div>
+                    </div>
+                    <div class="gallery-item" data-category="charity" tabindex="0" role="button">
+                        <img src="images/Flood_reliefpak2.jpg" alt="Pakistan Flood Relief" loading="lazy">
+                        <div class="gallery-overlay"><p>Pakistan Flood Relief</p></div>
+                    </div>
+                    <div class="gallery-item" data-category="charity" tabindex="0" role="button">
+                        <img src="images/Flood_Reliefpk3.jpg" alt="Pakistan Flood Relief" loading="lazy">
+                        <div class="gallery-overlay"><p>Pakistan Flood Relief</p></div>
+                    </div>
+                    <div class="gallery-item" data-category="charity" tabindex="0" role="button">
+                        <img src="images/Flood_Reliefpk6.jpg" alt="Pakistan Flood Relief" loading="lazy">
+                        <div class="gallery-overlay"><p>Pakistan Flood Relief</p></div>
+                    </div>
+
+                    <!-- Visits & Outreach -->
+                    <div class="gallery-item" data-category="visits" tabindex="0" role="button">
+                        <img src="images/ICNA-Visit1.jpg" alt="ICNA Visit" loading="lazy">
+                        <div class="gallery-overlay"><p>ICNA Visit</p></div>
+                    </div>
+                    <div class="gallery-item" data-category="visits" tabindex="0" role="button">
+                        <img src="images/ICna_visit2.jpg" alt="ICNA Visit" loading="lazy">
+                        <div class="gallery-overlay"><p>ICNA Visit</p></div>
+                    </div>
                 </div>
             </div>
         </section>
 
+        <!-- Lightbox -->
         <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" hidden>
             <button class="lightbox-close" aria-label="Close lightbox">&times;</button>
             <button class="lightbox-prev" aria-label="Previous image"><i class="fas fa-chevron-left"></i></button>
